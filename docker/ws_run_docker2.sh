@@ -19,7 +19,7 @@ docker run -it --gpus "device=0" -v $KITTI_PATH:/KITTI_PATH \
 				-v $MODEL_PATH:/MODEL_PATH \
 				-p $JupyHostPort:8888 \
 				-p $TboardHostPort:6006 \
-				ghcr.io/mhorn11/deepclr/deepclr-deps:1.0
+				ghcr.io/mhorn11/deepclr/deepclr:1.0
 cd ..
 export KITTI_PATH=/KITTI_PATH
 export MODELNET40_PATH=/MODELNET40_PATH
