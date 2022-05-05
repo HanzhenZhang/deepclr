@@ -190,9 +190,9 @@ def finish_config(cfg: Config) -> None:
         cfg.output_dir = None
 
     # store git commit
-    utils_path = osp.dirname(osp.realpath(__file__))
-    commit_hash = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=utils_path).decode('utf-8').split('\n')[0]
-    cfg.git_commit = commit_hash
+    # utils_path = osp.dirname(osp.realpath(__file__))
+    # commit_hash = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=utils_path).decode('utf-8').split('\n')[0]
+    # cfg.git_commit = commit_hash
 
     # check optimizer and scheduler settings
     if cfg.mode == Mode.NEW or cfg.mode == Mode.CONTINUE:
